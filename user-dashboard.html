@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>User Dashboard - E-Billing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: hsl(233, 26%, 24%);
+    }
+
+    header {
+      background-color:hsl(233, 26%, 24%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #7e858d;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: hsl(233, 26%, 24%);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to E-Billing</h1>
+    <p>User Dashboard</p>
+  </header>
+
+  <nav>
+    <a href="view-bill.html">View Bills</a>
+    <a href="make-payment.html">Make Payments</a>
+    <a href="view-profile.html">View Profile</a>
+    <a href="receipts.html">View Receipt</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Recent Bills</h2>
+      <p>No bills due at the moment.</p>
+    </div>
+
+    <div class="card">
+      <h2>Payment History</h2>
+      <p>You have paid 3 bills this month.</p>
+    </div>
+
+    <div class="card">
+      <h2>Account Info</h2>
+      <p>Name: Maximilienne WEAH<br>Email: maximilienneweah@example.com<br>Status: Active</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 E-Billing System. All rights reserved.
+  </footer>
+
+</body>
+</html>

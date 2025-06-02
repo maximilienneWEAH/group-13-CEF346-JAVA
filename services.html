@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
+    <style>
+        .service-body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            flex-direction: column;
+            background-color: hsl(233, 8%, 62%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250vh;
+            line-height: 1.9;
+        }
+
+        .special-text {
+            text-align: center;
+            color: black;
+        }
+
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: -20px;
+            padding: 15px;
+            padding-top: -50px;
+            margin: -10px;
+            background-color: hsl(233, 26%, 24%);
+        }
+
+        .service {
+            background: rgba(255, 255, 255, 0.781);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            min-width: calc(35% - 40px);
+            text-align: center;
+            transition: transform 0.2s ease;
+
+        }
+        .service:hover{
+            transform: scale(1.03);
+            background-color:  hsl(185, 43%, 83%);
+
+        }
+
+        .service img {
+            max-width: 120%;
+            border-radius: 20px;
+            display: flex;
+            place-items: center;
+            padding: -50px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+
+        @media (max-width: 768px) {
+            .service {
+                width: calc(45% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service {
+                width: 100%;
+            }
+        }
+
+        #ball {
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border: black 2px solid;
+            border-radius: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="service-body">
+    <h1 id="time"></h1>
+
+    <header>
+        <div class="logo">
+            <h2>
+                <img src="./images/logo.svg" alt="logo">
+            </h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">Sign up</a></li>
+                <li><a href="signin.html">login</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">testimonials</a></li>
+            </ul>
+        </nav>
+        <a href="#download" class="cta-button">Request Invite</a>
+    </header>
+
+    <h1>Services Offered by an E-Billing Management System</h1>
+
+    <div class="service-container">
+        <div class="service">
+            <img src="./images/bill4.jpg" alt="Service 1">
+         
+            <h2>Bill Generation</h2>
+            <p>
+                Automatically create professional invoices and bills for customers with configurable tax, discounts, and itemized details.
+            </p>
+        </div>
+        <div class="service">
+            <img src="./images/bill5.jpg" alt="Service 2">
+            <div>
+                <h2>Payment Tracking</h2>
+                <p>
+                    Monitor the status of invoices — view which are paid, pending, or overdue in real-time. Filter invoices by status, date, or client.
+                </p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="./images/bill3.jpg" alt="Service 3">
+            <h2>Customer Portal Access</h2>
+            <p>Provide clients with secure login to view their bills, download receipts, and make payments online.</p>
+        </div>
+        <div class="service">
+            <img src="./images/bill2.jpg" alt="Service 4">
+            <h2>Automated Payment Reminders</h2>
+            <p>Send email or SMS reminders for upcoming or overdue payments to ensure timely collections.
+            </p>
+        </div>
+        <div class="service">
+            <img src="./images/bank 1.jpg" alt="Service 5">
+            <h2>Recurring Billing</h2>
+            <p> Set up recurring invoices for subscription-based services or regular clients — automate the entire billing cycle.</p>
+        </div>
+        <div class="service">
+            <img src="./images/bill0.jpg" alt="Service 6">
+            <h2>Reports & Financial Analytics</h2>
+            <p> 
+                Generate monthly or yearly revenue reports, customer billing history, and payment performance insights to help with business decisions.
+            </p>
+        </div>
+    </div>
+    
+</body>
+
+</html>

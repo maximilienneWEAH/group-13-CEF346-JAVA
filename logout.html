@@ -1,0 +1,17 @@
+<!-- Place this anywhere in your dashboard page (admin-dashboard.html or user-dashboard.html) -->
+
+<button onclick="logout()" style="padding: 10px 20px; background-color: #e53935; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Logout
+  </button>
+  
+  <script>
+    function logout() {
+      // Optional: Clear sessionStorage/localStorage if used
+      // sessionStorage.clear();
+      // localStorage.clear();
+  
+      // Redirect to login page
+      window.location.href = "login.html";
+    }
+  </script>
+  

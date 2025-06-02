@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Make Payment | EasyPay</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <header>
+    <h1>easybank</h1>
+     <nav>
+      <a href="index.html">Home</a>
+      <a href="view-bill.html">view bill</a>
+      <a href="receipts.html">Receipts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="payment-container">
+      <h2>Make a Payment</h2>
+      <form id="paymentForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="account">Account Number</label>
+        <input type="text" id="account" required />
+
+        <label for="amount">Amount (CFA)</label>
+        <input type="number" id="amount" required />
+
+        <button type="submit">Pay Now</button>
+      </form>
+      <div id="paymentMessage"></div>
+    </section>
+  </main>
+  <script>
+    function submitPayment() {
+  const name = document.getElementById("name").value;
+  const service = document.getElementById("service").value;
+  const amount = document.getElementById("amount").value;
+  const date = new Date().toISOString().slice(0, 10);
+
+  // Receipt ID
+  const id = `RCP-${Date.now()}`;
+
+  const receipt = { id, name, service, amount, date };
+
+  // Save to localStorage
+  const receipts = JSON.parse(localStorage.getItem("receipts")) || [];
+  receipts.push(receipt);
+  localStorage.setItem("receipts", JSON.stringify(receipts));
+
+  // Mark bill as paid
+  const bills = JSON.parse(localStorage.getItem("bills")) || [];
+  const updatedBills = bills.map(b => {
+    if (b.service === service && b.name === name) {
+      return { ...b, paid: true };
+    }
+    return b;
+  });
+  localStorage.setItem("bills", JSON.stringify(updatedBills));
+
+  alert("Payment Successful ✅");
+  window.location.href = "receipt.html"; // Redirect to receipt page
+}
+  </script>
+
+  <footer>
+    <p>© 2025 easybank. All rights reserved.</p>
+  </footer>
+
+  <script src="makepayment.js"></script>
+</body>
+</html>

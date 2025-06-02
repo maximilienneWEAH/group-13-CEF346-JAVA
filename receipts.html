@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Receipts | EasyPay</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="receipt.css" />
+</head>
+<body>
+  <header>
+    <h1>easybank</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="make-payment.html">Make Payment</a>
+      <a href="view-bill.html">View Bill</a>
+      <a href="receipt.html" class="active">Receipts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="receipt-section">
+      <h2>Your Payment Receipts</h2>
+      <div id="receiptContainer" class="receipt-list"></div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 easybank. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="receipt.js"></script>
+</body>
+</html>

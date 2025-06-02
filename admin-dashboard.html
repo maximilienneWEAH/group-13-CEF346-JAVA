@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+ 
+  <title>Admin Dashboard - E-Billing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .dashboard-card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .dashboard-card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      .card-grid {
+        display: flex;
+        gap: 20px;
+      }
+
+      .dashboard-card {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>E-Billing Admin Dashboard</h1>
+    <p>Manage Users, Bills, and Reports</p>
+  </header>
+
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Users</a>
+    <a href="#">Bills</a>
+    <a href="#">Reports</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <div class="container">
+    <div class="card-grid">
+      <div class="dashboard-card">
+        <h3>Total Users</h3>
+        <p>120 registered users</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Pending Bills</h3>
+        <p>42 bills awaiting payment</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>Revenue This Month</h3>
+        <p>$8,450 collected</p>
+      </div>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Recent Activity</h3>
+      <ul>
+        <li>User Jane Doe paid $200 - May 25</li>
+        <li>New user John Smith registered - May 24</li>
+        <li>Invoice #1004 overdue - May 23</li>
+      </ul>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Quick Actions</h3>
+      <button onclick="alert('Redirecting to bill creation...')">Create New Bill</button>
+      <button onclick="alert('Redirecting to user management...')">Manage Users</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 E-Billing System. Admin Panel
+  </footer>
+
+</body>
+</html>

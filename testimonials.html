@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
+    <style>
+        .testimonials-body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            flex-direction: column;
+            background-color: hsl(233, 8%, 62%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350vh;
+            line-height: 1.9;
+        }
+
+        .special-text {
+            text-align: center;
+            color: black;
+        }
+
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: -20px;
+            padding: 15px;
+            padding-top: -50px;
+            margin: -10px;
+            background-color: hsl(233, 26%, 24%);
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.781);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            min-width: calc(35% - 40px);
+            text-align: center;
+
+        }
+
+        .testimonial img {
+            max-width: 120%;
+            border-radius: 30px;
+            display: flex;
+            place-items: center;
+            padding: -50px;
+            margin: auto;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: hsl(233, 26%, 24%)
+        }
+
+        @media (max-width: 768px) {
+            .testimonial {
+                width: calc(45% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonial {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="testimonials-body">
+
+    <header>
+        <div class="logo">
+          <h2>
+            <img src="./images/logo.svg" alt="logo">
+          </h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="signin.html">Sign up</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">testimonials</a></li>
+              </ul>
+        </nav>
+        <a href="#download" class="cta-button">Request Invite</a>
+      </header>
+
+    <h1>What Our Clients Say</h1>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <img src="./images/testimonial.jpg" alt="Client 1">
+            <h2>rosine ATANGANA – Small Business Owner</h2>
+            <p>"This system saves me hours every week. Billing and follow-ups are now automatic."</p>
+        </div>
+        <div class="testimonial">
+            <img src="./images/testimonial1.jpg" alt="Client 2">
+            <h2>maximilienne WEAH– Freelancer</h2>
+            <p>"The system has completely transformed how I manage my invoices. It’s fast, professional, and saves me at least 10 hours a month!"
+            </p>
+        </div>
+        <div class="testimonial">
+            <img src="./images/testimonial2.jpg" alt="Client 3">
+            <h2>aberline MVOGO– Finance Manager at TechNova Ltd.</h2>
+            <p> "I love the recurring billing feature. I no longer worry about chasing clients every month. It just works!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="./images/testimonial3.jpg" alt="Client 4">
+            <h2>estelle KAMENI– Digital Agency Owner</h2>
+            <p>
+                "Automated reminders and detailed reports have helped us reduce overdue payments by 80%. Highly recommended for any growing business."
+                </p>
+        </div>
+        <div class="testimonial">
+            <img src="./images/bill7.jpg" alt="Client 5">
+            <h2>elking NGA – Consultant</h2>
+            <p>The dashboard is clean, easy to navigate, and very reliable. I even get compliments from my clients on how professional the invoices look."
+            </p>
+        </div>
+        <div class="testimonial">
+            <img src="./images/bill1.png" alt="Client 6">
+            <h2>karl JONAS– Startup Founder</h2>
+            <p>"Being able to track payments and download receipts from one place is a game changer. The customer portal is brilliant."
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

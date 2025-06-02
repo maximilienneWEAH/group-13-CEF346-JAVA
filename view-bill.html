@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View Bill | EasyPay</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="view-bill.css" />
+</head>
+<body>
+  <header>
+    <h1>easybank</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="make-payment.html">Make Payment</a>
+      <a href="receipts.html">Receipts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bill-container">
+      <h2>Your Billing History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Invoice ID</th>
+            <th>Service</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="billTableBody">
+          <!-- JS will populate this -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>© 2025 easybank. All rights reserved.</p>
+  </footer>
+
+  <script src="view-bill.js"></script>
+</body>
+</html>

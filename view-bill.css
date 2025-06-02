@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9fb;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #2ec4b6, #00c49a);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bill-container {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bill-container h2 {
+  text-align: center;
+  color: #00c49a;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e0f7f4;
+  color: #00a389;
+}
+
+tr:hover {
+  background-color: #f1fdfc;
+}
+
+.status-paid {
+  color: #00c49a;
+  font-weight: bold;
+}
+
+.status-unpaid {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e0f7f4;
+  margin-top: 2rem;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
+
+    
+    <style>
+        body{
+            background-color: hsl(233, 26%, 24%);
+        }
+        .signin-body {
+
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            line-height: 1.9;
+            color: black;
+            overflow-y: hidden;
+            margin: 10px;
+            padding: 10px;
+            background-color: url('./images/Sans titre.jpg') no-repeat center center/cover;
+
+        }
+
+
+        .signin-container {
+            background: hsl(233, 8%, 62%);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .signin-container2 {
+            
+            padding: 5px;
+            margin: 5px;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            right: 85%;
+            transform: translate(-50%, -50%);
+            img{
+                border-radius: 50px;
+            }
+
+        }
+
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: #287206;
+            /* Darker shade on hover */
+        }
+    </style>
+</head>
+
+<body class="signin-body">
+
+    <header>
+        <div class="logo">
+            <h2>
+                <img src="./images/logo.svg" alt="logo">
+            </h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="signin.html">Sign up</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">testimonials</a></li>
+              </ul>
+        </nav>
+        <a href="#download" class="cta-button">Request Invite</a>
+    </header>
+
+    <section class="signin-container1">
+    <div class="signin-container">
+        <h2>Log In</h2>
+        <form id="loginForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Submit</button>
+          </form>
+         
+        <div class="signin-container2">
+            <img src="./images/testimonial.jpg" alt="signin-container">
+
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      const password = document.getElementById('password').value.trim().toLowerCase();
+  
+      if (password === 'maxi') {
+        window.location.href = 'admin-dashboard.html';
+      } 
+      else {
+        window.location.href = 'user-dashboard.html';
+      }
+    });
+  </script>
+      <p>
+        <a href="user-dashboard.html">Go to User Dashboard</a> <br>
+        <a href="admin-dashboard.html">Go to Admin Dashboard</a>
+      </p>
+      
+</body>
+
+</html>
